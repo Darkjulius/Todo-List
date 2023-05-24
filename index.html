@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Liste des tâches</title>
+  </head>
+  <body>
+    <header>
+      <h1>Liste des tâches</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          id="new-task-input"
+          placeholder="Qu'avez-vous de prévu ?"
+        />
+        <input type="submit" id="new-task-submit" value="Ajouter tâche" />
+      </form>
+    </header>
+    <main class="task-list">
+      <h2>Tâches</h2>
+      <div id="tasks">
+        <div class="task">
+          <div class="content">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              value="Tâche n°1"
+              readonly
+            />
+          </div>
+          <div class="actions">
+            <button class="edit">Modifier</button>
+            <button class="delete">Supprimer</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
